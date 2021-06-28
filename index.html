@@ -9,10 +9,46 @@
     <link rel="stylesheet" href="./style.css"/>
 
 </head>
-<body>
-    <header class="text-center jumbotron bg-dark text-light vw-100">
-        <h1>Weather Dashboard</h1>
-        </header>
+<body class="flex-column min-100-vh">
+    <header class="hero">
+      <h1 class="app-title"><i class="fab fa-github"></i> Weather Dashboard</h1>
+      <p>Search for a City to display its current weather and 5-day forecast.
+      </p>
+    </header>
+  
+  
+    <main class="flex-row justify-space-between">
+      <div class="col-12 col-md-4">
+  
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search For A City</h3>
+          <form id="user-form" class="card-body">
+            <label class="form-label" for="username"></label>
+            <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </div>
+  
+        <div class="card">
+          <div id="language-buttons" class="card-body">
+            <button data-language="javascript" class="btn">Blank</button>
+            <button data-language="html" class="btn">Blank</button>
+            <button data-language="css" class="btn">Blank</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-12 col-md-8">
+        <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
+        <div id="repos-container" class="list-group"></div>
+      </div>
+
+      <div class="col-12 col-md-8">
+            <h3>5-day Forecast</h3>
+            <div id="repos-container" class="list-group"></div>
+    </div>
+    </main>
+
 
     
 
