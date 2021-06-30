@@ -294,6 +294,11 @@
   .col-12 {
     flex: 0 0 100%;
   }
+  .fiveday {
+    width: 400px;
+    margin-left: 630px;
+  }
+
   
  
   /* col-sm */
@@ -400,9 +405,9 @@
     }
     .col-md-13 {
       flex: 0 0 100%;
-      border: 2px solid#425a88;
 
     }
+
   }
   
   /* col-lg */
